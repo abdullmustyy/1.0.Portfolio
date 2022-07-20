@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>abdulsPortfolio</title>
+    <link rel="icon" href="./images/my-logo.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+</head>
+
+<body class="lh-lg" id="home">
+    <!-- ======================================================LOADER====================================================== -->
+    <aside>
+        <div id="loader">
+            <div id="wrapperload">
+                <div class="elem d-flex justify-content-center align-items-center">
+                    <img src="./images/my-logo.png" alt="My Logo" class="w-25">
+                </div>
+                <div class="elem d-flex justify-content-center align-items-center">
+                    <h1 id="loader-text" class="display-6">
+                        Hit me up. I'd code it up!
+                    </h1>
+                </div>
+                <div class="elem d-flex justify-content-center align-items-center">
+                    <img src="./images/my-logo.png" alt="My Logo" class="w-25">
+                </div>
+            </div>
+        </div>
+    </aside>
+    <!-- ======================================================NAVIGATION====================================================== -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top opacity-75 p-2" id="navbar">
+        <div class="container-fluid">
+            <a class="navbar-brand nav-item" href="#home">
+                <img src="./images/my-logo.png" alt="My Logo" class="my-logo"> <!-- logomakr.com/app/9oLai8 -->
+            </a>
+            <button class="navbar-toggler nav-item" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+                <div class="navbar-nav align-items-center nav-tab">
+                    <a class="nav-link nav-item ms-2 opacity-75" href="#home">HOME</a>
+                    <a class="nav-link nav-item ms-2 opacity-75" href="#about">ABOUT</a>
+                    <a class="nav-link nav-item ms-2 opacity-75" href="#projects">PROJECTS</a>
+                    <a class="nav-link nav-item ms-2 opacity-75" href="#contact">CONTACT</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- =========================ASIDE==== -->
+
+    <!-- ========================================================HEADER======================================================== -->
+    <header class="mb-5">
+        <!-- Header background image overlay -->
+        <div class="background-overlay"></div>
+        <!-- ============================Showcase section -->
+        <section class="container h-100">
+            <!-- Showcase grid -->
+            <div class="row d-flex flex-column-reverse flex-md-row gx-md-5 h-100 mx-0">
+                <!-- Showcase left grid -->
+                <div
+                    class="col-12 col-md-5 header-container-l d-flex flex-column align-items-center align-items-md-end justify-content-center my-5 my-md-0 px-0 px-md-2">
+                    <div class="index-1">
+                        <img class="my-pics img-fluid" src="./images/myPics.png" alt="My picture">
+                    </div>
+                    <!-- <i class="fa-solid fa-arrow-down fs-1 bg-info mx-5 my-3 p-2 rounded-circle text-white"></i> -->
+                    <a href="#about" aria-label="Back to top"
+                        class="nav-about btn btn-outline-info mb-4 mx-5 my-3 rounded-circle text-decoration-none">
+                        <i class="fa-solid fa-arrow-down"></i>
+                    </a>
+                </div>
+                <!-- Showcase right grid -->
+                <div class="col-12 col-md-7 d-flex justify-content-center header-container-r px-0 px-md-2">
+                    <div class="d-flex flex-column align-items-center align-items-md-start justify-content-center">
+                        <h5 class="anim-text display-6 text-info index-1">Hi, I am
+                        </h5>
+                        <h1 class="anim-text position-relative">
+                            <span class="fw-bold intro-span-1">Abdul</span>
+                            <!-- <br> -->
+                            <span
+                                class="intro-span-2 pb-4 position-absolute top-100 start-50 translate-middle">Musty</span>
+                        </h1>
+                        <h5 class="anim-text career py-4 text-center text-md-start text-gradient">
+                            ~ A Web Developer
+                            who'll take on
+                            those ideas and make them so.
+                        </h5>
+                        <!-- Download CV & Resume button on md screen -->
+                        <div class="d-flex d-lg-none index-1">
+                            <a href="https://drive.google.com/file/d/13C8vBa7BEOV6P7GFXKF5MEUT0TB6I4yh/view?usp=sharing"
+                                type="button"
+                                class="anim-btn resume btn btn-outline-info fw-semibold rounded-pill text-uppercase">
+                                <i class="fa-solid fa-file"></i> Resumé
+                            </a>
+                            <a href="#contact" type="button" class="anim-btn contact-btn btn btn-info fw-semibold ms-3">
+                                CONTACT ME
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Download CV & Resume button on lg screen -->
+        <div class="cv-btn-cont d-none d-lg-inline-flex align-items-center">
+            <a href="https://drive.google.com/file/d/13C8vBa7BEOV6P7GFXKF5MEUT0TB6I4yh/view?usp=sharing" type="button"
+                class="anim-btn resume btn btn-outline-info fw-semibold rounded-pill text-uppercase">
+                <i class="fa-solid fa-file"></i> Resumé
+            </a>
+            <a href="#contact" type="button" class="anim-btn contact-btn btn btn-info fw-semibold ms-3">
+                CONTACT ME
+            </a>
+            <hr class="cv-btn-hr text-info">
+        </div>
+        <!-- Header socials  -->
+        <div class="header-socials d-none d-xl-inline-flex align-items-center">
+            <div class="socials-links d-flex">
+                <a href="https://www.linkedin.com/in/abdullahi-mustafa-1a1996237/" rel="noopener noreferrer"
+                    target="_blank" aria-label="LinkedIn Profile" class="text-decoration-none text-reset mx-3">
+                    <i class="fa-brands fa-linkedin link-icon"></i>
+                </a>
+                <a href="https://github.com/abdullmustyy" rel="noopener noreferrer" target="_blank"
+                    aria-label="Github Profile" class="text-decoration-none text-reset mx-3">
+                    <i class="fa-brands fa-github link-icon"></i>
+                </a>
+                <a href="https://twitter.com/hxnz33" rel="noopener noreferrer" target="_blank"
+                    aria-label="Twitter Profile" class="text-decoration-none text-reset mx-3">
+                    <i class="fa-brands fa-twitter link-icon"></i>
+                </a>
+                <a href="https://www.instagram.com/abdullmustyy/" rel="noopener noreferrer" target="_blank"
+                    aria-label="Instagram Profile" class="text-decoration-none text-reset mx-3">
+                    <i class="fa-brands fa-instagram link-icon"></i>
+                </a>
+            </div>
+            <hr class="socials-hr text-info">
+            <div class="vr me-4 text-info"></div>
+        </div>
+    </header>
+
+    <!-- ========================================================MAIN======================================================== -->
+    <main class="index-2">
+        <!-- ========================================ABOUT====== -->
+        <section class="container about">
+            <div class="d-flex justify-content-center justify-content-sm-start mt-5" data-aos="slide-up"
+                data-aos-duration="300">
+                <hr>
+            </div>
+            <!-- ==============================ABOUT-INTRO -->
+            <section class="about-intro">
+                <div class="row text-center text-lg-start">
+                    <h2 class="mb-5" id="about" data-aos="slide-up" data-aos-duration="300">About Me</h2>
+                    <div class="col-12 col-lg-7 d-flex flex-column justify-content-center mb-5 mb-lg-0"
+                        data-aos="slide-up" data-aos-duration="500">
+                        <p>
+                            Hey👋🏻 My name is Abdullahi Mustafa. I am a <span class="text-info"> Tech Enthusiast
+                            </span>
+                            who loves creating, designing, and
+                            maintaining Web Applications with a feel of great digital experience.
+                        </p>
+                        <p>
+                            I am continuously learning and acquiring new skills to fine-tune my deliveries in Web Design
+                            and Development.
+                        </p>
+                    </div>
+                    <div class="col-12 col-lg-5 d-flex justify-content-center" data-aos="slide-left"
+                        data-aos-duration="500">
+                        <figure class="figure">
+                            <img src="./images/cartoon-guy.png" alt="Cartoon image" class="figure-img img-fluid">
+                            <figcaption class="figure-caption lead text-end">Pushing limits and maintaining composure.
+                            </figcaption>
+                        </figure>
+                    </div>
+                </div>
+            </section>
+            <!-- ==============================SKILLS -->
+            <section class="skills-section">
+                <h2 class="text-center" data-aos="slide-up" data-aos-duration="300">Skills</h2>
+                <p class="lead text-center" data-aos="slide-up" data-aos-duration="300">I am good with but <span
+                        class="text-info"> not limited </span> to these
+                    skills.</p>
+                <div class="skills row h-auto px-5" data-aos="slide-up" data-aos-duration="500">
+                    <div class="col-12 col-lg-4 h-auto">
+                        <div class="skills-stack d-flex flex-column h-100 p-4 rounded">
+                            <span class="fa-stack mx-auto">
+                                <i class="fa-solid fa-circle fa-stack-2x"></i>
+                                <i class="fa-solid fa-code fa-stack-1x fa-inverse"></i>
+                            </span>
+                            <h5 class="my-3 text-center">Front-End</h5>
+                            <ul class="list-unstyled mt-3">
+                                <li><i class="fa-solid fa-ellipsis me-sm-5 me-3"></i><i
+                                        class="fa-brands fa-html5 me-2 text-danger"></i>HTML</li>
+                                <li><i class="fa-solid fa-ellipsis me-sm-5 me-3"></i><i
+                                        class="fa-brands fa-css3-alt me-2 text-primary"></i>CSS</li>
+                                <li><i class="fa-solid fa-ellipsis me-sm-5 me-3"></i><i
+                                        class="fa-brands fa-js-square me-2 text-warning"></i>JavaScript</li>
+                                <li><i class="fa-solid fa-ellipsis me-sm-5 me-3"></i><i
+                                        class="fa-brands fa-bootstrap me-2 text-purple"></i>Bootstrap</li>
+                                <!-- <li><i class="fa-brands fa-react me-2"></i>React</li> -->
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- <div class="col-12 col-md-3 h-auto">
+                        <div class="skills-stack d-flex flex-column justify-content-betwee h-100">
+                            <h5>Frontend Frameworks</h5>
+                            <ul class="list-unstyled">
+                                <li>React</li>
+                                <li>Vue</li>
+                                <li>BootStrap</li>
+                            </ul>
+                        </div>
+                    </div> -->
+                    <div class="col-12 col-lg-4 h-auto my-5 my-lg-0">
+                        <div class="skills-stack d-flex flex-column h-100 p-4 rounded">
+                            <span class="fa-stack mx-auto">
+                                <i class="fa-solid fa-circle fa-stack-2x"></i>
+                                <i class="fa-solid fa-server fa-stack-1x fa-inverse"></i>
+                            </span>
+                            <h5 class="my-3 text-center">Back-End</h5>
+                            <ul class="list-unstyled mt-3">
+                                <li><i class="fa-solid fa-ellipsis me-sm-5 me-3"></i><img src="./images/python.svg"
+                                        alt="Python logo" class="skills-logo img-fluid me-2">Python</li>
+                                <li><i class="fa-solid fa-ellipsis me-sm-5 me-3"></i><img src="./images/django.svg"
+                                        alt="Django logo" class="skills-logo img-fluid me-1">
+                                    Django</li>
+                                <li><i class="fa-solid fa-ellipsis me-sm-5 me-3"></i><img src="./images/flask.svg"
+                                        alt="Flask logo" class="skills-logo img-fluid me-2 bg-white">Flask</li>
+                                <!-- <li><i class="fa-brands fa-html5 me-2"></i>MongoDB</li> -->
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-4 h-auto">
+                        <div class="skills-stack d-flex flex-column h-100 p-4 rounded">
+                            <span class="fa-stack mx-auto">
+                                <i class="fa-solid fa-circle fa-stack-2x"></i>
+                                <i class="fa-solid fa-ellipsis fa-stack-1x fa-inverse"></i>
+                            </span>
+                            <h5 class="my-3 text-center">Others</h5>
+                            <ul class="list-unstyled mt-3">
+                                <li><i class="fa-solid fa-ellipsis me-sm-5 me-3"></i><i
+                                        class="fa-brands fa-github me-2 text-white"></i>GitHub</li>
+                                <li><i class="fa-solid fa-ellipsis me-sm-5 me-3"></i><i
+                                        class="fa-brands fa-git-alt me-2 text-danger"></i>Git</li>
+                                <li><i class="fa-solid fa-ellipsis me-sm-5 me-3"></i><img src="./images/figma.svg"
+                                        alt="Figma logo" class="skills-logo img-fluid me-2"></i>Figma</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- ==============================EXPERIENCE -->
+            <section class="experience sticky-to">
+                <h2 class=" text-center text-lg-end my-5" data-aos="slide-up" data-aos-duration="300">Experience</h2>
+                <!-- Vertical rule and experience log stack flexed -->
+                <div class="experience-container d-flex">
+                    <div class="vr text-info" data-aos="slide-right" data-aos-duration="200"></div>
+                    <!-- Experience log stack -->
+                    <div class="experience-log px-lg-5 w-100">
+                        <!-- Full stack log -->
+                        <div class="d-flex w-100" data-aos="slide-left" data-aos-duration="500">
+                            <i
+                                class="fa-solid fa-ellipsis fs-1 d-none d-md-inline-block me-2 my-auto opacity-50 text-info">
+                            </i>
+                            <i class="fa-solid fa-caret-right d-inline-block d-md-none my-auto opacity-50 text-info">
+                            </i>
+                            <div class="log-container d-flex my-5 p-4 rounded w-100">
+                                <div class="me-3">
+                                    <img src="./images/icons.png" alt="Experience icon"
+                                        class="img-fluid rounded-circle">
+                                </div>
+                                <div class="vr me-4 text-info"></div>
+                                <div class="log">
+                                    <h6>April 2022 - Present</h6>
+                                    <h3 class="text-white">Full Stack Developer</h3>
+                                    <h6 class="lead">@ I4GxZuri, Inc.</h6>
+                                    <details>
+                                        <summary class="opacity-75 text-info">
+                                            <u>Checkout Role</u>
+                                        </summary>
+                                        <ul class="ps-0">
+                                            <li>
+                                                Work with various languages alongside their frameworks with the aid of
+                                                different fora to build contemporary and
+                                                efficient websites.
+                                            </li>
+                                            <li>
+                                                Collaborate with colleagues to tackle and provide solutions to several
+                                                tasks and projects.
+                                            </li>
+
+                                        </ul>
+                                    </details>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Freelance log -->
+                        <div class="d-flex w-100" data-aos="slide-right" data-aos-duration="500">
+                            <div class="log-container d-flex ms-auto my-5 p-4 rounded w-100">
+                                <div class="me-3">
+                                    <img src="./images/icons.png" alt="Experience icon"
+                                        class="img-fluid rounded-circle">
+                                </div>
+                                <div class="vr me-4 text-info"></div>
+                                <div class="log">
+                                    <h6>June 2021 - Present</h6>
+                                    <h3 class="text-white">Freelance Web Developer</h3>
+                                    <h6 class="lead">Self Empowered.</h6>
+                                    <details>
+                                        <summary class="opacity-75 text-info">
+                                            <u>Checkout Role</u>
+                                        </summary>
+                                        <ul class="ps-0">
+                                            <li>
+                                                Use the latest web technologies to build static web pages and
+                                                well-functioning web applications.
+                                            </li>
+                                            <li>
+                                                Analyze public needs and get hands-on required technologies to render
+                                                services to those needs
+                                            </li>
+                                        </ul>
+                                    </details>
+                                </div>
+                            </div>
+                            <i
+                                class="fa-solid fa-ellipsis fs-1 d-none d-md-inline-block ms-2 my-auto opacity-50 text-info">
+                            </i>
+                            <i class="fa-solid fa-caret-left d-inline-block d-md-none my-auto opacity-50 text-info"></i>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <div class="d-flex justify-content-center justify-content-sm-end" data-aos="slide-up"
+                data-aos-duration="300">
+                <hr>
+            </div>
+        </section>
+
+        <!-- ========================================PROJECTS====== -->
+        <section class="container projects">
+            <h2 class="text-center text-lg-start" id="projects" data-aos="slide-up" data-aos-duration="300">Projects
+            </h2>
+            <p class="lead text-center text-lg-start" data-aos="slide-up" data-aos-duration="300">Here are some projects
+                I've worked on.</p>
+            <!-- =======Projects slide -->
+            <div id="projectsslide" class="carousel slide w-100" data-bs-ride="false" data-aos="slide-up">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#projectsslide" data-bs-slide-to="0" class="active bg-info"
+                        aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#projectsslide" data-bs-slide-to="1" class="bg-info"
+                        aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#projectsslide" data-bs-slide-to="2" class="bg-info"
+                        aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner d-flex h-auto w-100 overflow-hidden px-3 py-5 rounded">
+                    <!-- =======Tindog project -->
+                    <div class="carousel-item active h-auto w-100">
+                        <div class="d-flex flex-column flex-md-row h-100 w-100">
+                            <div class="project-img h-100 w-100 w-md-50 p-md-3">
+                                <a href="https://abdullmustyy.github.io/TinDog/" rel="noopener noreferrer"
+                                    target="_blank" aria-label="Preview">
+                                    <img src="./images/tindog-preview.png" alt="Tindog preview"
+                                        class="img-fluid h-100 w-100 rounded">
+                                </a>
+                            </div>
+                            <!-- <div class="vr me-4 text-info"></div> -->
+                            <div class="w-100 w-md-50 my-2 my-md-auto">
+                                <h3 class="text-info">Tindog</h3>
+                                <p class="lead">
+                                    Tinder for dogs, TinDog :). A static website of a matchmaking platform for dogs.
+                                </p>
+                                <p>
+                                    <span class="badge bg-danger opacity-75">HTML</span>
+                                    <span class="badge bg-primary opacity-75">CSS</span>
+                                    <span class="badge bg-purple opacity-75">Bootstrap</span>
+                                </p>
+                                <div class="project-links d-flex align-items-center">
+                                    <a href="https://abdullmustyy.github.io/TinDog/" rel="noopener noreferrer"
+                                        target="_blank" aria-label="Preview"
+                                        class="text-decoration-none text-reset tindog-preview mx-2">
+                                        <i class="fa-solid fa-arrow-up-right-from-square link-icon"></i>
+                                    </a>
+                                    <a href="https://github.com/abdullmustyy/TinDog" rel="noopener noreferrer"
+                                        target="_blank" aria-label="Code"
+                                        class="text-decoration-none text-reset tindog-code mx-2">
+                                        <i class="fa-brands fa-github link-icon"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- =======Huddle project -->
+                    <div class="carousel-item h-auto w-100">
+                        <div class="d-flex flex-column flex-md-row h-100 w-100">
+                            <div class="project-img h-100 w-100 w-md-50 p-md-3">
+                                <a href="https://abdullmustyy.github.io/I4GxZuri-Huddle-Landing-Page-Task/"
+                                    rel="noopener noreferrer" target="_blank" aria-label="Preview">
+                                    <img src="./images/huddle-preview.jpg" alt="Huddle preview"
+                                        class="img-fluid h-100 w-100 rounded">
+                                </a>
+                            </div>
+                            <!-- <div class="vr me-4 text-info"></div> -->
+                            <div class="w-100 w-md-50 my-2 my-md-auto">
+                                <h3 class="text-info">Huddle</h3>
+                                <p class="lead">
+                                    A responsive huddle landing page.
+                                </p>
+                                <p>
+                                    <span class="badge bg-danger opacity-75">HTML</span>
+                                    <span class="badge bg-primary opacity-75">CSS</span>
+                                </p>
+                                <div class="project-links d-flex align-items-center">
+                                    <a href="https://abdullmustyy.github.io/I4GxZuri-Huddle-Landing-Page-Task/"
+                                        rel="noopener noreferrer" target="_blank" aria-label="Preview"
+                                        class="text-decoration-none text-reset huddle-preview mx-2">
+                                        <i class="fa-solid fa-arrow-up-right-from-square link-icon"></i>
+                                    </a>
+                                    <a href="https://github.com/abdullmustyy/I4GxZuri-Huddle-Landing-Page-Task"
+                                        rel="noopener noreferrer" target="_blank" aria-label="Code"
+                                        class="text-decoration-none text-reset huddle-code mx-2">
+                                        <i class="fa-brands fa-github link-icon"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- My Portfolio project -->
+                    <div class="carousel-item h-auto w-100">
+                        <div class="d-flex flex-column flex-md-row h-100 w-100">
+                            <div class="project-img h-100 w-100 w-md-50 p-md-3">
+                                <img src="./images/my-portfolio-preview.png" alt="My portfolio preview"
+                                    class="img-fluid h-100 w-100 rounded">
+                            </div>
+                            <!-- <div class="vr me-4 text-info"></div> -->
+                            <div class="w-100 w-md-50 my-2 my-md-auto">
+                                <h3 class="text-info">My Portfolio</h3>
+                                <p class="lead">
+                                    This is my portfolio website, built by me.
+                                </p>
+                                <p>
+                                    <span class="badge bg-danger opacity-75">HTML</span>
+                                    <span class="badge bg-primary opacity-75">CSS</span>
+                                    <span class="badge bg-warning opacity-75">JavaScript</span>
+                                    <span class="badge bg-purple opacity-75">BootStrap</span>
+                                </p>
+                                <div class="project-links d-flex align-items-center">
+                                    <a href="https://abdullmustyy.github.io/I4GxZuri-Huddle-Landing-Page-Task/"
+                                        rel="noopener noreferrer" target="_blank" aria-label="Preview"
+                                        class="text-decoration-none text-reset huddle-preview mx-2">
+                                        <i class="fa-solid fa-arrow-up-right-from-square link-icon"></i>
+                                    </a>
+                                    <a href="https://github.com/abdullmustyy/I4GxZuri-Huddle-Landing-Page-Task"
+                                        rel="noopener noreferrer" target="_blank" aria-label="Code"
+                                        class="text-decoration-none text-reset huddle-code mx-2">
+                                        <i class="fa-brands fa-github link-icon"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev bg-info rounded-circle p-2" type="button"
+                    data-bs-target="#projectsslide" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next bg-info rounded-circle p-2" type="button"
+                    data-bs-target="#projectsslide" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </section>
+    </main>
+
+    <!-- ========================================================ASIDE======================================================== -->
+    <aside>
+        <section class="container contact" id="contact">
+            <div class="contact-heading text-center">
+                <h2 class="mb-0" data-aos="slide-up" data-aos-duration="300">Contact Me</h2>
+                <h6 class="display-6" data-aos="slide-up" data-aos-duration="300">Say <span
+                        class="text-info">Hello</span>🤗</h6>
+            </div>
+            <div class="contact-details text-center">
+                <p class="lead my-4" data-aos="slide-up" data-aos-duration="300">
+                    Have a project in mind? If you'd like to inquire, don't hesitate to contact me, and I will respond
+                    as soon as possible.
+                    Regular communication is essential to me, so <span class="text-info">let's keep in touch!</span>
+                </p>
+                <a href="mailto:abdulmusty03@outlook.com" class="btn btn-outline-info btn-lg fw-bold"
+                    data-aos="zoom-in-down">
+                    <i class="fa-regular fa-envelope"></i> Say?
+                </a>
+            </div>
+        </section>
+    </aside>
+
+    <!-- ========================================================FOOTER======================================================== -->
+    <footer>
+        <a href="#" aria-label="Back to top"
+            class="nav-top btn btn-outline-info mb-5 rounded-circle text-decoration-none">
+            <i class="fa-solid fa-arrow-up"></i>
+        </a>
+        <section class="footer border-to">
+            <div class="socials-brand d-flex justify-content-between">
+                <div class="socials d-flex justify-content-around w-50">
+                    <a href="https://www.linkedin.com/in/abdullahi-mustafa-1a1996237/" rel="noopener noreferrer"
+                        target="_blank" aria-label="LinkedIn Profile" class="text-decoration-none text-reset"
+                        data-aos="flip-up">
+                        <i class="fa-brands fa-linkedin link-icon"></i>
+                    </a>
+                    <a href="https://github.com/abdullmustyy" rel="noopener noreferrer" target="_blank"
+                        aria-label="Github Profile" class="text-decoration-none text-reset" data-aos="flip-up"
+                        data-aos-delay="200">
+                        <i class="fa-brands fa-github link-icon"></i>
+                    </a>
+                    <a href="https://twitter.com/hxnz33" rel="noopener noreferrer" target="_blank"
+                        aria-label="Twitter Profile" class="text-decoration-none text-reset" data-aos="flip-up"
+                        data-aos-delay="400">
+                        <i class="fa-brands fa-twitter link-icon"></i>
+                    </a>
+                    <a href="https://www.instagram.com/abdullmustyy/" rel="noopener noreferrer" target="_blank"
+                        aria-label="Instagram Profile" class="text-decoration-none text-reset" data-aos="flip-up"
+                        data-aos-delay="800">
+                        <i class="fa-brands fa-instagram link-icon"></i>
+                    </a>
+                </div>
+                <div class="brand d-flex mx-5" data-aos="slide-left">
+                    <a href="#home" class="text-decoration-none">
+                        <img src="./images/my-logo.png" alt="My Logo" class="my-logo"> <!-- logomakr.com/app/9oLai8 -->
+                    </a>
+                </div>
+            </div>
+            <div class="copyright text-center">
+                <p class="lead mb-0 mt-5 text-white">&copy; Abdul</p>
+            </div>
+        </section>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
+        integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js"
+        integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy"
+        crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/c9d81ecc03.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 1000,
+            once: true,
+        });
+    </script>
+    <script src="index.js"></script>
+</body>
+
+</html>
